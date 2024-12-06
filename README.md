@@ -1,61 +1,64 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stitch Up Dreams (SUD) - حيث تلتقي الأحلام بالتصميم</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Cairo', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white py-4 shadow-md">
-      <div class="container mx-auto px-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Stitch Up Dreams</h1>
-        <nav>
-          <ul class="flex space-x-4">
-            <li><a href="#" class="hover:text-blue-200">الرئيسية</a></li>
-            <li><a href="#" class="hover:text-blue-200">خدماتنا</a></li>
-            <li><a href="#" class="hover:text-blue-200">معرض الأعمال</a></li>
-            <li><a href="#" class="hover:text-blue-200">اتصل بنا</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+# Stitch Up Dreams (SUD) 🧵✨
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
-import js from '@eslint/js';
-import globals from 'globals';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
-import tseslint from 'typescript-eslint';
+## Overview
+Stitch Up Dreams is a modern web application that transforms creative visions into stunning design realities. Our platform combines cutting-edge technology with artistic craftsmanship.
 
-export default tseslint.config(
-  { ignores: ['dist'] },
-  {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['**/*.{ts,tsx}'],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-    plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-    },
-  }
-);
+### 🌟 Project Vision
+Turn imagination into beautifully crafted digital experiences, bridging dreams and design through innovative technology.
+
+## 🛠 Tech Stack
+- **Frontend**: React
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+
+## 🚀 Features
+- Responsive Design
+- Modern UI/UX
+- Multilingual Support (English & Arabic)
+- High-Performance Web Application
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+
+### Setup Steps
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/stitchup-dreams.git
+```
+
+2. Install dependencies
+```bash
+cd stitchup-dreams
+npm install
+```
+
+3. Run the development server
+```bash
+npm run dev
+```
+
+## 🌐 Deployment
+- Hosted on: GitHub Pages
+- Continuous Integration: GitHub Actions
+
+## 🤝 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+- **Email**: support@stitchupdreams.com
+- **Website**: [stitchupdreams.com](https://www.stitchupdreams.com)
+
+## 📄 License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+**Made with ❤️ by the Stitch Up Dreams Team**
