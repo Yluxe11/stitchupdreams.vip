@@ -54,7 +54,7 @@ npm run dev
 
 ## 📞 Contact
 - **Email**: support@stitchupdreams.com
-- **Website**: [stitchupdreams.com](https://www.stitchupdreams.com)
+- **Website**: [stitchupdreams.com](https://www.stitchupdreams.vip)
 
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for more information.
