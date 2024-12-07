@@ -1,51 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stitch Up Dreams - Explore Custom Apparel Navigation">
-    <meta name="keywords" content="Navigation, Custom Clothing, Stitch Up Dreams">
+    <meta name="description" content="Navegación intuitiva y fluida para Stitch Up Dreams">
+    <meta name="keywords" content="Bordado, Navegación, Tienda personalizada, Stitch Up Dreams">
     <meta name="author" content="Stitch Up Dreams">
-    <title>Stitch Up Dreams - Navigation</title>
+    <title>Stitch Up Dreams</title>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
     <style>
-        .nav-link {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .nav-link:hover {
+        .btn-cta {
             background-color: #2563eb;
             color: #fff;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-cta:hover {
+            background-color: #1d72f3;
+        }
+        .nav-link:hover {
+            background-color: #e2f1ff;
         }
     </style>
 </head>
 
 <body class="font-sans bg-gray-50">
 
-    <!-- Header with Navigation -->
+    <!-- Navbar -->
     <nav class="bg-teal-500 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            
-            <!-- Logo -->
             <a href="#" class="text-3xl font-bold text-white">Stitch Up Dreams</a>
 
-            <!-- Navigation Menu -->
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="nav-link text-white font-medium">Home</a></li>
-                <li><a href="products.html" class="nav-link text-white font-medium">Products</a></li>
-                <li><a href="custom-design.html" class="nav-link text-white font-medium">Custom Design</a></li>
-                <li><a href="blog.html" class="nav-link text-white font-medium">Blog</a></li>
-                <li><a href="contact.html" class="nav-link text-white font-medium">Contact Us</a></li>
-            </ul>
+            <!-- Menú Desplegable -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="nav-link text-white font-medium hover:text-gray-300">Inicio</a>
+                <a href="#" class="nav-link text-white font-medium hover:text-gray-300">Productos</a>
 
+                <!-- Menú Desplegable de Categorías -->
+                <div class="relative group">
+                    <button class="nav-link inline-flex items-center text-white font-medium">
+                        Colecciones ▼
+                    </button>
+                    <div class="absolute top-10 left-0 mt-2 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Anime</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Citas Motivacionales</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Caligrafía Árabe</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link text-white font-medium hover:text-gray-300">Contacto</a>
+            </div>
+
+            <!-- Menú móvil -->
+            <button id="mobile-menu" class="md:hidden text-white">
+                ☰
+            </button>
         </div>
     </nav>
 
-    <!-- Responsive Navigation for Smaller Screens -->
-    <div class="md:hidden p-4 text-center">
-        <p>For a seamless experience, navigate using our menu above!</p>
+    <!-- Menú Móvil Desplegable -->
+    <div id="mobile-menu-dropdown" class="hidden bg-gray-100 mt-2 rounded-lg md:hidden">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Inicio</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Productos</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Colecciones</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contacto</a>
     </div>
+
+    <!-- Scripts para el Menú Móvil -->
+    <script>
+        const btnMobileMenu = document.getElementById('mobile-menu');
+        const dropdownMenu = document.getElementById('mobile-menu-dropdown');
+
+        btnMobileMenu.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
