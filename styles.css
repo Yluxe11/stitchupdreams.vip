@@ -1,125 +1,56 @@
-/* Import Tailwind Base */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Body - General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+/* Botón Compra Ahora */
+.btn-cta {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Header */
-header {
-  background-color: #2a9d8f;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+.btn-cta:hover {
+    background-color: #1d72f3;
 }
 
-/* Main Section */
-main {
-  padding: 2rem;
-  text-align: center;
+/* Botón Más Información */
+.btn-info {
+    background-color: #e0e0e0;
+    color: #444;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
 }
 
-/* CTA Button */
-.cta {
-  background-color: #e9c46a;
-  color: #264653;
-  padding: 1rem;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+.btn-info:hover {
+    background-color: #ccc;
 }
 
-.cta:hover {
-  background-color: #f4a261;
+/* Botón Explora Colecciones */
+.btn-explore {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Product Cards */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.btn-explore:hover {
+    background-color: #ffb300;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+/* Transición suave */
+.btn-info, .btn-explore, .btn-cta {
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Footer */
-footer {
-  background-color: #264653;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Social Media Links */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 2rem;
-  margin: 0 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #e9c46a;
-}
-
-/* Navigation Links */
-nav a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #2d3436;
-}
-
-/* Custom Design Button */
-.btn-custom-design {
-  background-color: #ffeb3d;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-custom-design:hover {
-  background-color: #ffc107;
-}
-
-/* Animation Fade-In */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
+.btn-info:hover, .btn-explore:hover, .btn-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
