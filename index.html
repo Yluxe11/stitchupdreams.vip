@@ -3,88 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora Stitch Up Dreams con colecciones personalizables y optimizadas para cualquier dispositivo.">
-    <meta name="keywords" content="Bordado, Ropa personalizada, Stitch Up Dreams">
-    <meta name="author" content="Stitch Up Dreams">
+    <meta name="description" content="Explora Stitch Up Dreams - Personalización y colecciones únicas">
     <title>Stitch Up Dreams</title>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
-    <style>
-        .btn-cta {
-            background-color: #2563eb;
-            color: #fff;
-            padding: 1rem 2rem;
-            font-weight: bold;
-            border-radius: 12px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-cta:hover {
-            background-color: #1d72f3;
-        }
-    </style>
 </head>
 
 <body class="font-sans bg-gray-50">
 
-    <!-- Header -->
+    <!-- Encabezado -->
     <header class="bg-teal-500 py-4 text-center text-white">
         <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
-        <p>Tu personalización, tu estilo</p>
+        <p>¡Tu estilo, tu personalización!</p>
+
+        <!-- Selector de Idioma -->
+        <div class="mt-2">
+            <span class="text-gray-200 font-medium">Idioma:</span>
+            <button onclick="changeLanguage('es')" class="btn-language bg-yellow-400 text-white px-2 rounded ml-2">Español</button>
+            <button onclick="changeLanguage('en')" class="btn-language bg-blue-500 text-white px-2 rounded ml-2">English</button>
+        </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="bg-teal-500 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-white">SUD</a>
-            <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="text-white font-medium hover:text-gray-200">Inicio</a></li>
-                <li><a href="#" class="text-white font-medium hover:text-gray-200">Productos</a></li>
-                <li><a href="#" class="text-white font-medium hover:text-gray-200">Personalización</a></li>
-                <li><a href="#" class="text-white font-medium hover:text-gray-200">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
     <main class="container mx-auto px-6 py-8">
-        <section>
-            <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Explora nuestras colecciones</h2>
+        <section id="content">
+            <h2 class="text-3xl font-bold mb-6 text-gray-900">Explora Nuestras Colecciones</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <a href="#" class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="anime.jpg" alt="Anime" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="mt-2 text-gray-900 font-bold">Personaje Anime</h3>
+                    <p class="mt-1 text-gray-600">¡Tu anime favorito personalizado!</p>
+                </a>
                 
-                <!-- Colección Anime -->
-                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <img src="anime-collection.jpg" alt="Anime" class="w-full h-48 object-cover rounded-t-lg">
-                    <p class="mt-2 text-gray-600">Bordados inspirados en tus personajes favoritos del anime.</p>
-                    <a href="#" class="btn-cta mt-4 inline-block">Compra Ahora</a>
-                </div>
+                <a href="#" class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="motivational.jpg" alt="Cita Motivacional" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="mt-2 text-gray-900 font-bold">Cita Motivacional</h3>
+                    <p class="mt-1 text-gray-600">Inspiración diaria en cada bordado.</p>
+                </a>
 
-                <!-- Colección Motivacional -->
-                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <img src="motivational-collection.jpg" alt="Citas Motivacionales" class="w-full h-48 object-cover rounded-t-lg">
-                    <p class="mt-2 text-gray-600">Colección de bordados con citas que te inspiran.</p>
-                    <a href="#" class="btn-cta mt-4 inline-block">Explora</a>
-                </div>
-
-                <!-- Colección Caligrafía Árabe -->
-                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                    <img src="arabic-calligraphy.jpg" alt="Caligrafía Árabe" class="w-full h-48 object-cover rounded-t-lg">
-                    <p class="mt-2 text-gray-600">Diseños únicos de caligrafía árabe bordada.</p>
-                    <a href="#" class="btn-cta mt-4 inline-block">Descubre</a>
-                </div>
-
+                <a href="#" class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="calligraphy.jpg" alt="Caligrafía Árabe" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="mt-2 text-gray-900 font-bold">Caligrafía Árabe</h3>
+                    <p class="mt-1 text-gray-600">Un diseño único y personalizable.</p>
+                </a>
             </div>
+
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-teal-700 text-white py-6 mt-12">
         <div class="container mx-auto text-center">
-            <p>Soporte: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
-            <p>© 2024 Stitch Up Dreams - Creatividad y Estilo Personalizado</p>
+            <p>Correo Electrónico: <a href="mailto:support@stitchupdreams.com" class="underline text-blue-400">support@stitchupdreams.com</a></p>
         </div>
     </footer>
 
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'es') {
+                document.querySelectorAll('h1, h2, p').forEach(el => {
+                    el.textContent = el.textContent.replace(/.*?(Anime|Motivacional|Caligrafía Árabe|Personalización)/, {
+                        'Anime': 'Personaje Anime',
+                        'Motivacional': 'Cita Motivacional',
+                        'Caligrafía Árabe': 'Caligrafía Árabe',
+                        'Personalización': 'Estilo Personalizado'
+                    });
+                });
+                alert('Idioma cambiado a Español');
+                
+            } else if (lang === 'en') {
+                document.querySelectorAll('h1, h2, p').forEach(el => {
+                    el.textContent = el.textContent.replace(/.*?(Anime|Motivacional|Caligrafía Árabe|Estilo Personalizado)/, {
+                        'Anime': 'Anime Character',
+                        'Motivacional': 'Motivational Quote',
+                        'Caligrafía Árabe': 'Arabic Calligraphy',
+                        'Personalización': 'Custom Design'
+                    });
+                });
+                alert('Language changed to English');
+            }
+        }
+    </script>
+
 </body>
-</html>
