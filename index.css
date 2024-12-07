@@ -1,18 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+<button className="btn-hover bg-blue-500 text-white py-3 px-6 rounded-lg">
+  Join Dreamers
+</button>
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+<div className="card-hover bg-white rounded-lg shadow-lg p-6 mt-4">
+  <p>Custom Design</p>
+</div>
 
-.animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
-}
+<div className="animate-fade-in mt-8">
+  <p>Appearing Element with Animation</p>
+</div>
