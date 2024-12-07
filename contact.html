@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Stitch Up Dreams - Get in touch with our support team.">
-    <meta name="keywords" content="Contact, Support, Custom Clothing, Stitch Up Dreams">
+    <meta name="description" content="Contacta con Stitch Up Dreams para cualquier consulta o personalización.">
+    <meta name="keywords" content="Contacto, soporte, correo electrónico, redes sociales">
     <meta name="author" content="Stitch Up Dreams">
-    <title>Contact Us - Stitch Up Dreams</title>
+    <title>Contacto - Stitch Up Dreams</title>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
     <style>
         .btn-cta {
-            background-color: #e9c46a;
-            color: #264653;
+            background-color: #2563eb;
+            color: #fff;
             padding: 1rem 2rem;
             font-weight: bold;
             border-radius: 12px;
-            text-decoration: none;
             transition: background-color 0.3s ease;
         }
-
         .btn-cta:hover {
-            background-color: #f4a261;
+            background-color: #1d72f3;
         }
         .social-icons a {
             transition: transform 0.3s ease;
@@ -38,52 +36,69 @@
     <!-- Header -->
     <header class="bg-teal-500 py-4 text-center text-white">
         <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
-        <p>Contact Us</p>
+        <p>¡Tu personalización, tu estilo!</p>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-8">
-        
-        <section>
-            <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Get in Touch</h2>
 
-            <!-- Contact Form -->
-            <form action="contact.php" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Contacto</h2>
+
+            <!-- Información de Contacto Prominente -->
+            <div class="text-center mb-8">
+                <p class="text-xl font-bold text-gray-900">Correo Electrónico</p>
+                <p class="mt-2 text-gray-700 font-medium">
+                    <a href="mailto:support@stitchupdreams.com" class="text-blue-500 hover:underline">
+                        support@stitchupdreams.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="social-icons flex justify-center space-x-6 mt-4">
+                <a href="https://instagram.com" target="_blank" class="text-4xl hover:scale-110">
+                    📸 Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" class="text-4xl hover:scale-110">
+                    📘 Facebook
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-4xl hover:scale-110">
+                    🐦 Twitter
+                </a>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <form action="contact.php" method="POST" class="bg-white rounded-lg shadow-lg mt-8 p-6">
+                
                 <div class="mb-4">
-                    <label for="name" class="block text-gray-700 font-medium">Full Name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your full name" class="w-full mt-1 p-3 border rounded-lg">
+                    <label for="name" class="block text-gray-700 font-medium">Nombre Completo</label>
+                    <input id="name" name="name" type="text" placeholder="Tu nombre completo" class="w-full mt-1 p-3 border rounded-lg">
                 </div>
 
                 <div class="mb-4">
-                    <label for="email" class="block text-gray-700 font-medium">Email Address</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email" class="w-full mt-1 p-3 border rounded-lg">
+                    <label for="email" class="block text-gray-700 font-medium">Correo Electrónico</label>
+                    <input id="email" name="email" type="email" placeholder="Tu correo electrónico" class="w-full mt-1 p-3 border rounded-lg">
                 </div>
 
                 <div class="mb-4">
-                    <label for="message" class="block text-gray-700 font-medium">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." class="w-full mt-1 p-3 border rounded-lg"></textarea>
+                    <label for="message" class="block text-gray-700 font-medium">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." class="w-full mt-1 p-3 border rounded-lg"></textarea>
                 </div>
 
-                <button type="submit" class="btn-cta mt-4 inline-block">Send Message</button>
+                <button type="submit" class="btn-cta mt-4 inline-block w-full">Enviar Mensaje</button>
+
             </form>
 
         </section>
-
-        <!-- Social Media Links -->
-        <div class="social-icons mt-8 text-center">
-            <p class="mb-4 text-gray-900 font-bold">Follow Us</p>
-            <a href="https://instagram.com" target="_blank" class="text-4xl mx-2 social-icons">📸</a>
-            <a href="https://facebook.com" target="_blank" class="text-4xl mx-2 social-icons">📘</a>
-            <a href="https://twitter.com" target="_blank" class="text-4xl mx-2 social-icons">🐦</a>
-        </div>
 
     </main>
 
     <!-- Footer -->
     <footer class="bg-teal-700 text-white py-6 mt-12">
         <div class="container mx-auto text-center">
-            <p>Support Email: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
-            <p>© 2024 Stitch Up Dreams - Empowering Creativity and Passion</p>
+            <p>© 2024 Stitch Up Dreams - Personalización y Creatividad</p>
+            <p>Correo Electrónico: <a href="mailto:support@stitchupdreams.com" class="underline text-blue-400">support@stitchupdreams.com</a></p>
         </div>
     </footer>
 
