@@ -1,93 +1,90 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore unique embroidered apparel at Stitch Up Dreams - Anime & Motivational Clothing." />
-    <meta name="keywords" content="Embroidery, Custom Apparel, Anime, Motivational Quotes, Arabic Calligraphy" />
-    <meta name="author" content="Stitch Up Dreams" />
-    <title>Stitch Up Dreams - Embroidered Apparel</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora Stitch Up Dreams con colecciones personalizables y optimizadas para cualquier dispositivo.">
+    <meta name="keywords" content="Bordado, Ropa personalizada, Stitch Up Dreams">
+    <meta name="author" content="Stitch Up Dreams">
+    <title>Stitch Up Dreams</title>
 
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
     <style>
-      .btn-cta {
-        background-color: #e9c46a;
-        color: #264653;
-        padding: 1rem 2rem;
-        font-weight: bold;
-        border-radius: 12px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-      }
-      .btn-cta:hover {
-        background-color: #f4a261;
-      }
+        .btn-cta {
+            background-color: #2563eb;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-cta:hover {
+            background-color: #1d72f3;
+        }
     </style>
-  </head>
+</head>
 
-  <body class="font-sans bg-gray-50">
+<body class="font-sans bg-gray-50">
 
     <!-- Header -->
     <header class="bg-teal-500 py-4 text-center text-white">
-      <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
-      <p>Where Creativity Meets Motivation</p>
+        <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
+        <p>Tu personalización, tu estilo</p>
     </header>
 
+    <!-- Navigation -->
+    <nav class="bg-teal-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-white">SUD</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="text-white font-medium hover:text-gray-200">Inicio</a></li>
+                <li><a href="#" class="text-white font-medium hover:text-gray-200">Productos</a></li>
+                <li><a href="#" class="text-white font-medium hover:text-gray-200">Personalización</a></li>
+                <li><a href="#" class="text-white font-medium hover:text-gray-200">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-      
-      <!-- Section for Types of Embroidery -->
-      <section>
-        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Our Embroidery Collections</h2>
+    <main class="container mx-auto px-6 py-8">
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Explora nuestras colecciones</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <!-- Anime Characters -->
-          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <img src="anime-embroidery.jpg" alt="Anime Characters" class="w-full h-48 object-cover rounded-t-lg">
-            <h3 class="text-xl font-bold mt-4">Anime Characters</h3>
-            <p>Discover custom designs of your favorite anime characters, embroidered with high-quality details.</p>
-            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
-          </article>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Colección Anime -->
+                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="anime-collection.jpg" alt="Anime" class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="mt-2 text-gray-600">Bordados inspirados en tus personajes favoritos del anime.</p>
+                    <a href="#" class="btn-cta mt-4 inline-block">Compra Ahora</a>
+                </div>
 
-          <!-- Motivational Quotes -->
-          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <img src="motivational-embroidery.jpg" alt="Motivational Quotes" class="w-full h-48 object-cover rounded-t-lg">
-            <h3 class="text-xl font-bold mt-4">Motivational Quotes</h3>
-            <p>Wear your motivation with custom-embroidered inspirational quotes that empower and uplift.</p>
-            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
-          </article>
+                <!-- Colección Motivacional -->
+                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="motivational-collection.jpg" alt="Citas Motivacionales" class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="mt-2 text-gray-600">Colección de bordados con citas que te inspiran.</p>
+                    <a href="#" class="btn-cta mt-4 inline-block">Explora</a>
+                </div>
 
-          <!-- Arabic Calligraphy -->
-          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <img src="calligraphy-embroidery.jpg" alt="Arabic Calligraphy" class="w-full h-48 object-cover rounded-t-lg">
-            <h3 class="text-xl font-bold mt-4">Arabic Calligraphy</h3>
-            <p>Elegantly embroidered Arabic calligraphy designs that blend tradition with style.</p>
-            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
-          </article>
+                <!-- Colección Caligrafía Árabe -->
+                <div class="p-4 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="arabic-calligraphy.jpg" alt="Caligrafía Árabe" class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="mt-2 text-gray-600">Diseños únicos de caligrafía árabe bordada.</p>
+                    <a href="#" class="btn-cta mt-4 inline-block">Descubre</a>
+                </div>
 
-        </div>
-
-        <!-- CTA Additional -->
-        <div class="text-center mt-8">
-          <a href="#" class="btn-cta inline-block mt-4">Start Customizing Your Design</a>
-        </div>
-
-      </section>
-
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-teal-700 text-white py-6 mt-12">
-      <div class="container mx-auto text-center">
-        <p>Contact us: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
-        <div class="social-icons mt-4">
-          <a href="https://instagram.com" target="_blank" class="text-2xl mx-2">📸</a>
-          <a href="https://facebook.com" target="_blank" class="text-2xl mx-2">📘</a>
-          <a href="https://twitter.com" target="_blank" class="text-2xl mx-2">🐦</a>
+        <div class="container mx-auto text-center">
+            <p>Soporte: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
+            <p>© 2024 Stitch Up Dreams - Creatividad y Estilo Personalizado</p>
         </div>
-      </div>
     </footer>
 
-  </body>
+</body>
 </html>
