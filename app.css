@@ -1,0 +1,193 @@
+/* Import Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Wrapper */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+  background-color: #2a9d8f;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: #e9c46a;
+  color: #264653;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #f4a261;
+}
+
+/* Product Cards */
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Social Media Links */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e9c46a;
+}
+
+/* Text Editor and Form Inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Button Custom Design */
+.btn-custom-design {
+  background-color: #ffeb3d;
+  color: #264653;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-design:hover {
+  background-color: #ffc107;
+}
+
+/* Animation Fade-In Effect */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Scroll Effect */
+a {
+  transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes for Margin and Padding */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
