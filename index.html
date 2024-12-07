@@ -1,13 +1,70 @@
-<!doctype html>
+# Create a customized version of the HTML content for "Stitch Up Dreams"
+custom_index_html = """<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Stitch Up Dreams - Embroidered Apparel</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        background-color: #2a9d8f;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 2rem;
+        text-align: center;
+      }
+      .cta {
+        background-color: #e9c46a;
+        color: #264653;
+        padding: 1rem;
+        margin: 2rem auto;
+        display: inline-block;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .cta:hover {
+        background-color: #f4a261;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header>
+      <h1>Welcome to Stitch Up Dreams</h1>
+      <p>Where Embroidery Meets Passion</p>
+    </header>
+    <main>
+      <p>Discover unique embroidered apparel inspired by:</p>
+      <ul>
+        <li>Anime Characters</li>
+        <li>Motivational Quotes</li>
+        <li>Arabic Calligraphy</li>
+        <li>Awareness Messages</li>
+      </ul>
+      <a href="#contact" class="cta">Shop Now</a>
+    </main>
+    <footer id="contact">
+      <p>Contact us: support@stitchupdreams.com</p>
+      <p>Follow us on social media for the latest updates!</p>
+    </footer>
   </body>
 </html>
+"""
+
+# Save the customized content to a new HTML file
+custom_index_file_path = os.path.join(project_folder_path, "custom_index.html")
+with open(custom_index_file_path, 'w', encoding='utf-8') as file:
+    file.write(custom_index_html)
+
+custom_index_file_path
