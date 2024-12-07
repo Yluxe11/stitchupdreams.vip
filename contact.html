@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Stitch Up Dreams - Get in touch with our support team.">
+    <meta name="keywords" content="Contact, Support, Custom Clothing, Stitch Up Dreams">
+    <meta name="author" content="Stitch Up Dreams">
+    <title>Contact Us - Stitch Up Dreams</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
+    <style>
+        .btn-cta {
+            background-color: #e9c46a;
+            color: #264653;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            background-color: #f4a261;
+        }
+        .social-icons a {
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-teal-500 py-4 text-center text-white">
+        <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
+        <p>Contact Us</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+        
+        <section>
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Get in Touch</h2>
+
+            <!-- Contact Form -->
+            <form action="contact.php" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your full name" class="w-full mt-1 p-3 border rounded-lg">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" class="w-full mt-1 p-3 border rounded-lg">
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." class="w-full mt-1 p-3 border rounded-lg"></textarea>
+                </div>
+
+                <button type="submit" class="btn-cta mt-4 inline-block">Send Message</button>
+            </form>
+
+        </section>
+
+        <!-- Social Media Links -->
+        <div class="social-icons mt-8 text-center">
+            <p class="mb-4 text-gray-900 font-bold">Follow Us</p>
+            <a href="https://instagram.com" target="_blank" class="text-4xl mx-2 social-icons">📸</a>
+            <a href="https://facebook.com" target="_blank" class="text-4xl mx-2 social-icons">📘</a>
+            <a href="https://twitter.com" target="_blank" class="text-4xl mx-2 social-icons">🐦</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-teal-700 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>Support Email: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
+            <p>© 2024 Stitch Up Dreams - Empowering Creativity and Passion</p>
+        </div>
+    </footer>
+
+</body>
+</html>
