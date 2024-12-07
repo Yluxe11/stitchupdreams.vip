@@ -1,26 +1,21 @@
+// src/App.tsx
 import React from 'react';
-import { Header } from './components/layout/Header';
-import { Footer } from './components/layout/Footer';
-import { Hero } from './components/home/Hero';
-import { Features } from './components/home/Features';
-import { StyleDiscovery } from './components/home/StyleDiscovery';
-import { Shop } from './pages/Shop';
-import { CustomDesign } from './pages/CustomDesign';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ProductsPage from './pages/ProductsPage';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <StyleDiscovery />
-        <Shop />
-        <CustomDesign />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/products" component={ProductsPage} />
+          <Route path="/" exact>
+            <h1 className="text-center text-4xl mt-10">Welcome to Stitch Up Dreams</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
