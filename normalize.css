@@ -1,0 +1,206 @@
+/* Normalize CSS */
+
+/* Reset default browser styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, hr, br, time, mark, b, i, center {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, nav, section {
+  display: block;
+}
+
+/* Set the base font size */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Consistent line height */
+body {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+button {
+  padding: 0.75rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Buttons */
+button,
+.btn-cta {
+  background-color: #2a9d8f;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn-cta:hover {
+  background-color: #2563eb;
+}
+
+/* Custom Design Button */
+.btn-custom-design {
+  background-color: #ffeb3d;
+  color: #264653;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-design:hover {
+  background-color: #ffc107;
+}
+
+/* Navigation Links */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  list-style-position: inside;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #e9f7fa;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Utility Classes */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
