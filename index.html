@@ -3,87 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore unique embroidered apparel at Stitch Up Dreams. From anime characters to motivational quotes, find your perfect style here!" />
+    <meta name="description" content="Explore unique embroidered apparel at Stitch Up Dreams - Anime & Motivational Clothing." />
     <meta name="keywords" content="Embroidery, Custom Apparel, Anime, Motivational Quotes, Arabic Calligraphy" />
     <meta name="author" content="Stitch Up Dreams" />
     <title>Stitch Up Dreams - Embroidered Apparel</title>
-    <link rel="icon" type="image/png" href="/images/logo.png" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" />
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
-      header {
-        background-color: #2a9d8f;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-      }
-      main {
-        padding: 2rem;
-        text-align: center;
-      }
-      .cta {
+      .btn-cta {
         background-color: #e9c46a;
         color: #264653;
-        padding: 1rem;
-        margin: 2rem auto;
-        display: inline-block;
-        border-radius: 8px;
+        padding: 1rem 2rem;
+        font-weight: bold;
+        border-radius: 12px;
         text-decoration: none;
-        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
       }
-      .cta:hover {
+      .btn-cta:hover {
         background-color: #f4a261;
-      }
-      footer {
-        background-color: #264653;
-        color: white;
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: 2rem;
-      }
-      .social-icons {
-        margin-top: 1rem;
-      }
-      .social-icons a {
-        margin: 0 0.5rem;
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-      }
-      .social-icons a:hover {
-        color: #e9c46a;
       }
     </style>
   </head>
-  <body>
-    <header>
-      <h1>Welcome to Stitch Up Dreams</h1>
-      <p>Where Embroidery Meets Passion</p>
+
+  <body class="font-sans bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-teal-500 py-4 text-center text-white">
+      <h1 class="text-4xl font-bold">Stitch Up Dreams</h1>
+      <p>Where Creativity Meets Motivation</p>
     </header>
-    <main>
-      <p>Discover unique embroidered apparel inspired by:</p>
-      <ul>
-        <li>Anime Characters</li>
-        <li>Motivational Quotes</li>
-        <li>Arabic Calligraphy</li>
-        <li>Awareness Messages</li>
-      </ul>
-      <a href="#contact" class="cta">Shop Now</a>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      
+      <!-- Section for Types of Embroidery -->
+      <section>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Our Embroidery Collections</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Anime Characters -->
+          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <img src="anime-embroidery.jpg" alt="Anime Characters" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-bold mt-4">Anime Characters</h3>
+            <p>Discover custom designs of your favorite anime characters, embroidered with high-quality details.</p>
+            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
+          </article>
+
+          <!-- Motivational Quotes -->
+          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <img src="motivational-embroidery.jpg" alt="Motivational Quotes" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-bold mt-4">Motivational Quotes</h3>
+            <p>Wear your motivation with custom-embroidered inspirational quotes that empower and uplift.</p>
+            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
+          </article>
+
+          <!-- Arabic Calligraphy -->
+          <article class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <img src="calligraphy-embroidery.jpg" alt="Arabic Calligraphy" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-bold mt-4">Arabic Calligraphy</h3>
+            <p>Elegantly embroidered Arabic calligraphy designs that blend tradition with style.</p>
+            <a href="#" class="btn-cta mt-4 inline-block">Shop Now</a>
+          </article>
+
+        </div>
+
+        <!-- CTA Additional -->
+        <div class="text-center mt-8">
+          <a href="#" class="btn-cta inline-block mt-4">Start Customizing Your Design</a>
+        </div>
+
+      </section>
+
     </main>
-    <footer id="contact">
-      <p>Contact us: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
-      <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">&#x1F4F2;</a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">&#x1F3C6;</a>
-        <a href="https://twitter.com" target="_blank" aria-label="Twitter">&#x1F426;</a>
+
+    <!-- Footer -->
+    <footer class="bg-teal-700 text-white py-6 mt-12">
+      <div class="container mx-auto text-center">
+        <p>Contact us: <a href="mailto:support@stitchupdreams.com" class="underline">support@stitchupdreams.com</a></p>
+        <div class="social-icons mt-4">
+          <a href="https://instagram.com" target="_blank" class="text-2xl mx-2">📸</a>
+          <a href="https://facebook.com" target="_blank" class="text-2xl mx-2">📘</a>
+          <a href="https://twitter.com" target="_blank" class="text-2xl mx-2">🐦</a>
+        </div>
       </div>
-      <p>Follow us on social media for the latest updates!</p>
     </footer>
+
   </body>
 </html>
