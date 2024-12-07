@@ -17,16 +17,19 @@ export function DesignCanvas({ product, color, text, image }: DesignCanvasProps)
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Clear canvas
+    // Clear the canvas
     ctx.fillStyle = color;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Draw product outline
-    ctx.strokeStyle = '#000000';
-    ctx.lineWidth = 2;
+    // Apply shadow effect to the product outline
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 4;
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+    ctx.shadowBlur = 10;
     ctx.strokeRect(10, 10, canvas.width - 20, canvas.height - 20);
+    ctx.shadowBlur = 0;
 
-    // Draw uploaded image if exists
+    // Draw the uploaded image if it exists
     if (image) {
       const img = new Image();
       img.src = image;
@@ -43,17 +46,18 @@ export function DesignCanvas({ product, color, text, image }: DesignCanvasProps)
       };
     }
 
-    // Draw text
+    // Draw custom text with better formatting
     if (text) {
-      ctx.fillStyle = '#000000';
-      ctx.font = '24px Arial';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      
       const lines = text.split('\n');
       const lineHeight = 30;
+
+      ctx.fillStyle = '#000';
+      ctx.font = 'bold 30px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
       const startY = (canvas.height - (lines.length - 1) * lineHeight) / 2;
-      
+
       lines.forEach((line, i) => {
         ctx.fillText(line, canvas.width / 2, startY + i * lineHeight);
       });
@@ -61,11 +65,13 @@ export function DesignCanvas({ product, color, text, image }: DesignCanvasProps)
   }, [product, color, text, image]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      width={500}
-      height={500}
-      className="w-full border border-gray-200 rounded-lg"
-    />
+    <div className="rounded-lg bg-white shadow-lg overflow-hidden mt-4">
+      <canvas
+        ref={canvasRef}
+        width={500}
+        height={500}
+        className="w-full rounded-lg"
+      />
+    </div>
   );
 }
